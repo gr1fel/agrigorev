@@ -146,7 +146,7 @@ img {
   animation: spin 20s linear infinite;
   position: absolute;
   top: 186px;
-  right: 32px;
+  right: 64px;
   z-index: 100;
   pointer-events: none;
   width: min(max(220px, 20vw), 300px);
@@ -213,6 +213,10 @@ img {
   .mag {
     height: 600px;
   }
+  .autoru img {
+    max-width: 300px;
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .rotating-circle {
@@ -222,6 +226,10 @@ img {
     margin: 32px 16px;
   }
   .subtext {
+    width: 100%;
+  }
+  .autoru img {
+    max-width: 250px;
     width: 100%;
   }
 }
