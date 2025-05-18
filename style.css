@@ -85,7 +85,6 @@ h1 {
 }
 video {
   max-width: 600px;
-  min-width: 300px;
   object-fit: contain;
   display: inline-block;
   width: 100%;
@@ -117,7 +116,6 @@ img {
 .dinn-tips {
   background-color: #D962FF;
   text-align: center;
-  padding: 24px 0;
 }
 .alfa-pay {
   background-color: #000;
@@ -127,6 +125,10 @@ img {
   background-color: #FF5A3B;
   text-align: center;
   padding: 100px 0;
+}
+.autoru img {
+  max-width: 407px;
+  width: 100%;
 }
 .mag {
   background-color: #0000FF;
@@ -163,6 +165,22 @@ img {
   fill: #191919;
   font-weight: 800;
   text-align: justify;
+  opacity: 20%;
+}
+#moreText {
+  display: none;
+}
+#moreText div {
+  padding-bottom: 10px;
+}
+#toggleLink {
+  cursor: pointer;
+}
+#toggleLink:hover {
+  text-decoration: underline;
+}
+.currently {
+  padding-top: 10px;
 }
 @keyframes spin {
   from {
@@ -189,7 +207,21 @@ img {
 }
 @media (max-width: 660px) {
   .rotating-circle {
-    top: 300px;
+    top: 330px;
     transform: translateX(50%);
+  }
+  .mag {
+    height: 600px;
+  }
+}
+@media (max-width: 500px) {
+  .rotating-circle {
+    display: none;
+  }
+  body {
+    margin: 32px 16px;
+  }
+  .subtext {
+    width: 100%;
   }
 }

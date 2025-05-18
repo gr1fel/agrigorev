@@ -31,7 +31,13 @@
     UX should be emotional,<br/>
     Storytelling is King.</h1>
 </div>
-<div class="subtext">Belgrade-based creative <strong>Lead Product Designer</strong> with a systems mindset, strong product design vision, and empathy as a superpower. <a href="#">More about me</a></div>
+<div class="subtext">Belgrade-based creative <strong>Lead Product Designer</strong> with a systems mindset, strong product design vision, and empathy as a superpower.
+  <div id="moreText">
+    <div class="currently">✦ Currently, I help venues to boost their business as a Founding Designer at Dinn.app, an AI-powered platform for cafes and restaurants.</div>
+    <div>✦ Previously, I led UI/UX designers and UX writers to craft empathic design and storytelling for game-changing projects at Alfa Bank. </div>
+    <div>✦ Before that, I was Lead Product Designer at Yandex, where we were building the best automotive classified Auto.ru. </div>
+  </div>
+  <a id="toggleLink">Read more</a></div>
 <div class="rotating-circle">
   <svg viewBox="0 0 300 300" width="300" height="300" preserveAspectRatio="xMidYMid meet">
     <defs>
@@ -85,9 +91,26 @@
     <div class="label">Designing top automotive digital media: 0→200k users in the first year <span class="subline">✦ UI/UX, Desktop/Mobile</span></div>
   </div>
   <div class="row">
-    <div class="autoru"> <img src="6-auto.png" width="407" height="844"></img> </div>
+    <div class="autoru"> <img src="6-auto.png"></img> </div>
     <div class="label">Yandex's 4 million DAU automotive classifieds <span class="subline">✦ Product design, Design system, Mobile, B2C</span></div>
   </div>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleLink = document.getElementById("toggleLink");
+    const moreText = document.getElementById("moreText");
+
+    toggleLink.addEventListener("click", function(e) {
+      e.preventDefault();
+      if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "inline";
+        toggleLink.textContent = "Show less";
+      } else {
+        moreText.style.display = "none";
+        toggleLink.textContent = "Read more";
+      }
+    });
+  });
+</script>
 </body>
 </html>
