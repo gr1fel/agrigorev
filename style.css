@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* -------------------------
+   Reset & Base Styles
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #191919;
+  margin: 32px;
+}
+/* -------------------------
+   Layout: Navigation
+-------------------------- */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+.logo, .actions {
+  flex: 1;
+}
+.actions {
+  text-align: right;
+}
+a {
+  text-decoration: none;
+  color: #0000FF;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #0000FF;
+}
+.actions a {
+  margin-left: 16px;
+}
+.actions a:first-child {
+  margin-left: 32px;
+}
+/* -------------------------
+   Hero Section
+-------------------------- */
+.hero {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+h1 {
+  font-size: 3em;
+  line-height: 0.9;
+  margin-left: -4px;
+  font-weight: 900;
+}
+/* -------------------------
+   Subtext
+-------------------------- */
+.subtext {
+  padding: 32px 0;
+  width: 70%;
+}
+/* -------------------------
+   Case Studies Section
+-------------------------- */
+.cases {
+  display: flex;
+  gap: 2vw;
+  margin-top: 8px;
+}
+.row {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+.subline {
+  color: #999;
+}
+video {
+  max-width: 600px;
+  min-width: 300px;
+  object-fit: contain;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: -6px;
+}
+img {
+  margin-bottom: -6px;
+}
+.label {
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+.alfa-site {
+  background-color: #F13728;
+  text-align: center;
+}
+.metals {
+  background-color: #A151FF;
+  text-align: center;
+}
+.dinn-admin {
+  background-color: #FED146;
+  text-align: center;
+}
+.dinn-admin video {
+  max-width: 1024px;
+  min-width: 300px;
+}
+.dinn-tips {
+  background-color: #D962FF;
+  text-align: center;
+  padding: 24px 0;
+}
+.alfa-pay {
+  background-color: #000;
+  text-align: center;
+}
+.autoru {
+  background-color: #FF5A3B;
+  text-align: center;
+  padding: 100px 0;
+}
+.mag {
+  background-color: #0000FF;
+  text-align: center;
+  height: 850px;
+  background-image: url('5-mag.png');
+  background-repeat: no-repeat;
+  background-position: 100px 100px;
+  background-size: cover;
+}
+.rotating-circle {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  animation: spin 20s linear infinite;
+  position: absolute;
+  top: 186px;
+  right: 32px;
+  z-index: 100;
+  pointer-events: none;
+  width: min(max(220px, 20vw), 300px);
+  height: min(max(220px, 20vw), 300px);
+}
+.rotating-circle svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.rotating-circle text {
+  font-size: 26px;
+  font-family: "Geist", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  fill: #191919;
+  font-weight: 800;
+  text-align: justify;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1000px) {
+  .cases {
+    flex-direction: column;
+  }
+  .rotating-circle {
+    top: 260px;
+    transform: translateX(50%);
+  }
+}
+@media (max-width: 800px) {
+  .rotating-circle {
+    top: 260px;
+    transform: translateX(50%);
+  }
+}
+@media (max-width: 660px) {
+  .rotating-circle {
+    top: 300px;
+    transform: translateX(50%);
+  }
+}
