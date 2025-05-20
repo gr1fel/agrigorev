@@ -148,10 +148,11 @@ img {
 .figma-plugin {
   background-color: #111111;
   text-align: center;
+	width: 100%;
 }
 .figma-plugin img {
   max-width: 1024px;
-  min-width: 300px;
+		width: 100%;
 }
 .rotating-circle {
   width: 300px;
