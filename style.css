@@ -130,6 +130,12 @@ img {
   max-width: 407px;
   width: 100%;
 }
+.article {
+  text-align: center;
+}
+.article img {
+  width: 100%;
+}
 .mag {
   background-color: #0000FF;
   text-align: center;
@@ -138,6 +144,14 @@ img {
   background-repeat: no-repeat;
   background-position: 100px 100px;
   background-size: cover;
+}
+.figma-plugin {
+  background-color: #111111;
+  text-align: center;
+}
+.figma-plugin img {
+  max-width: 1024px;
+  min-width: 300px;
 }
 .rotating-circle {
   width: 300px;
@@ -181,6 +195,37 @@ img {
 }
 .currently {
   padding-top: 10px;
+}
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  margin: 32px 0;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-text {
+  padding: 0 2rem; /* Some spacing between repeats */
+  font-size: 1.3em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: #191919;
+  opacity: 0.2;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 @keyframes spin {
   from {
