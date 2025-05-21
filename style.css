@@ -236,6 +236,30 @@ img {
   padding: 0;
   margin: 0;
 }
+
+.links {
+margin-top: 32px;
+	align-content: center;
+}
+.links a {
+	color: #191919;
+	text-decoration: none;
+}
+.links a:hover {
+	text-decoration: none;
+}
+.links div {
+	background-color: #f5f5f5;
+	padding: 16px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+.links div:hover {
+	background-color: #ccc;
+
+}
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
