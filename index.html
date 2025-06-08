@@ -91,9 +91,12 @@
 </div>
 <div class="cases">
   <div class="row">
-    <div class="dinn-tips">
-      <video src="4-dinn-tips.mp4" autoplay muted loop playsinline></video>
-    </div>
+    <div class="tooltip-box"> <a href="tips.html">
+      <div class="dinn-tips">
+        <video src="4-dinn-tips.mp4" autoplay muted loop playsinline></video>
+        <div class="tooltip-follow">Read Case Story</div>
+      </div>
+      </a></div>
     <div class="label">0→1: Transforming tips experience with Dinn.app — a chat-based digital menu <span class="subline">✦ Product design, Design system, B2C</span></div>
   </div>
   <div class="row">
@@ -157,6 +160,25 @@
         moreText.style.display = "none";
         toggleLink.textContent = "Read more";
       }
+    });
+  });
+</script> 
+<script>
+  document.querySelectorAll('.tooltip-box').forEach(box => {
+    const tooltip = box.querySelector('.tooltip-follow');
+
+    box.addEventListener('mousemove', e => {
+      const rect = box.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      tooltip.style.left = `${x + 10}px`;
+      tooltip.style.top = `${y + 10}px`;
+      tooltip.style.opacity = 1;
+    });
+
+    box.addEventListener('mouseleave', () => {
+      tooltip.style.opacity = 0;
     });
   });
 </script>
