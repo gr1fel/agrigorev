@@ -13,7 +13,7 @@ body {
   font-style: normal;
   font-size: 1.2em;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.4;
   color: #191919;
   margin: 32px;
 }
@@ -25,6 +25,30 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 40px;
+}
+.footer-nav {
+  display: flex;
+  gap: 16px;
+  padding: 40px 0;
+  margin-top: 64px;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+.footer-nav a {
+  flex: 1; /* равномерное распределение ширины */
+  padding: 16px 0;
+  border: 2px solid #0000FF;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+.footer-nav a:hover {
+  background-color: #0000FF;
+  color: #fff;
+  text-decoration: none;
 }
 .logo, .actions {
   flex: 1;
@@ -67,10 +91,10 @@ a:visited {
 -------------------------- */
 .hero {
   font-size: clamp(1rem, 2vw, 2rem);
+  line-height: 0.9;
 }
 h1 {
   font-size: 3em;
-  line-height: 0.9;
   margin-left: -4px;
   font-weight: 900;
 }
@@ -78,6 +102,10 @@ h1 {
    Subtext
 -------------------------- */
 .subtext {
+  padding: 32px 0;
+  width: 70%;
+}
+.subtext2 {
   padding: 32px 0;
   width: 70%;
 }
@@ -131,6 +159,13 @@ img {
   background-color: #D962FF;
   text-align: center;
 }
+.tips-feedback {
+  background-color: #FECB3E;
+  text-align: center;
+}
+.tips-feedback img {
+  max-width: 375;
+}
 .alfa-pay {
   background-color: #000;
   text-align: center;
@@ -167,6 +202,46 @@ img {
 .figma-plugin img {
   max-width: 1024px;
   width: 100%;
+}
+.tips-stars {
+  background-color: #333333;
+  text-align: center;
+  width: 100%;
+  height: 684px;
+}
+.tips-stars img {
+  max-width: 1216px;
+  width: 100%;
+  margin-bottom: -7px;
+}
+.textblock {
+  width: 70%;
+  margin: 40px auto;
+}
+.description {
+  padding-bottom: 8px;
+}
+.description p {
+  padding-top: 16px;
+}
+h2 {
+  padding-bottom: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+ul {
+  padding-top: 16px;
+}
+li {
+  padding-bottom: 8px;
+}
+.custom-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+.custom-bullets li::before {
+  content: "✦";
+  margin-right: 8px;
 }
 .rotating-circle {
   width: 300px;
@@ -258,19 +333,17 @@ img {
 .links div:hover {
   background-color: #ccc;
 }
-
 .gradient-text {
   background: linear-gradient(90deg, #FF4D4D, #FF00CC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
 }
-
 .footer {
-	background-color: #f5f5f5;
-	width: 100%;
-	height: 400px;
-	margin-top: 40px;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 400px;
+  margin-top: 40px;
 }
 @keyframes scroll-left {
   0% {
@@ -296,6 +369,13 @@ img {
     top: 260px;
     transform: translateX(50%);
   }
+  .textblock {
+    width: 100%;
+  }
+  .subtext2 {
+    padding: 32px 0;
+    width: 100%;
+  }
 }
 @media (max-width: 800px) {
   .rotating-circle {
@@ -304,6 +384,9 @@ img {
   }
   .optional {
     display: none !important;
+  }
+  .footer-nav {
+    flex-direction: column;
   }
 }
 @media (max-width: 660px) {
