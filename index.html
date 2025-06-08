@@ -55,7 +55,7 @@
     <div>✦ Previously, I led UI/UX designers and UX writers to craft empathic design and storytelling for game-changing projects at Alfa Bank. </div>
     <div>✦ Before that, I was Lead Product Designer at Yandex, where we were building the best automotive classified Auto.ru. </div>
   </div>
-  <a id="toggleLink">Hide</a></div>
+  <a id="toggleLink">Show more</a></div>
 <div class="rotating-circle">
   <svg viewBox="0 0 300 300" width="300" height="300" preserveAspectRatio="xMidYMid meet">
     <defs>
@@ -174,10 +174,10 @@
       e.preventDefault();
       if (moreText.style.display === "none" || moreText.style.display === "") {
         moreText.style.display = "inline";
-        toggleLink.textContent = "Show more";
+        toggleLink.textContent = "Hide";
       } else {
         moreText.style.display = "none";
-        toggleLink.textContent = "Hide";
+        toggleLink.textContent = "Show more";
       }
     });
   });
