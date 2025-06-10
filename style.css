@@ -256,7 +256,7 @@ li {
   margin: 0 auto;
   animation: spin 20s linear infinite;
   position: absolute;
-  top: 186px;
+  top: 200px;
   right: 64px;
   z-index: 100;
   pointer-events: none;
