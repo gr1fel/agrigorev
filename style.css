@@ -369,6 +369,13 @@ li {
   font-size: 0.9em;
   z-index: 10;
 }
+.underline{
+	font-size: 13px;
+	color: #999;
+	font-weight: 400;
+	padding-top: 32px;
+	text-align: center;
+}
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
