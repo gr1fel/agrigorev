@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* -------------------------
    Reset & Base Styles
 -------------------------- */
@@ -7,9 +8,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
@@ -20,6 +23,7 @@ body {
   color: #191919;
   margin: 32px;
 }
+
 /* -------------------------
    Layout: Navigation
 -------------------------- */
@@ -29,6 +33,7 @@ body {
   justify-content: space-between;
   padding-bottom: 40px;
 }
+
 .footer-nav {
   display: flex;
   gap: 16px;
@@ -37,8 +42,10 @@ body {
   width: 100%;
   flex-wrap: wrap;
 }
+
 .footer-nav a {
-  flex: 1; /* равномерное распределение ширины */
+  flex: 1;
+  /* равномерное распределение ширины */
   padding: 16px 0;
   border: 2px solid #0000FF;
   border-radius: 9999px;
@@ -47,25 +54,31 @@ body {
   text-align: center;
   transition: background-color 0.2s;
 }
+
 .footer-nav a:hover {
   background-color: #0000FF;
   color: #fff;
   text-decoration: none;
 }
-.logo, .actions {
+
+.logo,
+.actions {
   flex: 1;
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 12px;
   line-height: 1;
 }
+
 .logo-link {
   text-decoration: none;
   color: #000000;
   display: inline-block;
 }
+
 .avatar {
   width: 40px;
   height: 40px;
@@ -74,25 +87,32 @@ body {
   vertical-align: middle;
   margin-top: -8px;
 }
+
 .actions {
   text-align: right;
 }
+
 a {
   text-decoration: none;
   color: #0000FF;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 a:visited {
   color: #0000FF;
 }
+
 .actions a {
   margin-left: 16px;
 }
+
 .actions a:first-child {
   margin-left: 32px;
 }
+
 /* -------------------------
    Hero Section
 -------------------------- */
@@ -100,11 +120,13 @@ a:visited {
   font-size: clamp(1rem, 2vw, 2rem);
   line-height: 0.9;
 }
+
 h1 {
   font-size: 3em;
   margin-left: -4px;
   font-weight: 900;
 }
+
 /* -------------------------
    Subtext
 -------------------------- */
@@ -112,10 +134,12 @@ h1 {
   padding: 32px 0;
   width: 70%;
 }
+
 .subtext2 {
   padding: 32px 0;
   width: 70%;
 }
+
 /* -------------------------
    Case Studies Section
 -------------------------- */
@@ -124,14 +148,17 @@ h1 {
   gap: 2vw;
   margin-top: 8px;
 }
+
 .row {
   flex: 1;
   margin: 0;
   padding: 0;
 }
+
 .subline {
   color: #999;
 }
+
 video {
   max-width: 600px;
   object-fit: contain;
@@ -139,120 +166,173 @@ video {
   width: 100%;
   margin-bottom: -6px;
 }
+
 img {
   margin-bottom: -6px;
 }
+
 .label {
   padding-top: 8px;
   padding-bottom: 24px;
 }
+
 .alfa-site {
   background-color: #F13728;
   text-align: center;
 }
+
 .metals {
   background-color: #A151FF;
   text-align: center;
 }
+
 .dinn-admin {
   background-color: #FED146;
   text-align: center;
 }
+
 .dinn-admin video {
   max-width: 1024px;
   min-width: 300px;
 }
-.dinn-tips {
+
+.dinn-tips,
+.lantana-case {
   background-color: #D962FF;
   text-align: center;
 }
+
 .tips-feedback {
   background-color: #FECB3E;
   text-align: center;
 }
+
 .tips-feedback img {
   max-width: 375;
 }
+
 .alfa-pay {
   background-color: #000;
   text-align: center;
 }
+
 .alfa-pay video {
-	margin-bottom: -7px;
+  margin-bottom: -7px;
 }
+
 .autoru {
   background-color: #FF5A3B;
   text-align: center;
   padding: 64px 0;
 }
+
 .autoru img {
   max-width: 407px;
   width: 100%;
 }
+
 .article {
   text-align: center;
 }
+
 .article img {
   width: 100%;
 }
+
 .mag {
   background-color: #0000FF;
   text-align: center;
   height: 850px;
-  background-image: url('5-mag.png');
+  background-image: url('assets/auto-mag/5-mag.png');
   background-repeat: no-repeat;
   background-position: 100px 100px;
   background-size: cover;
 }
+
 .figma-plugin {
   background-color: #111111;
   text-align: center;
   width: 100%;
 }
+
 .figma-plugin img {
   max-width: 1024px;
   width: 100%;
 }
+
 .tips-stars {
   background-color: #333333;
   text-align: center;
   width: 100%;
   height: 684px;
 }
+
 .tips-stars img {
   max-width: 1216px;
   width: 100%;
   margin-bottom: -7px;
 }
+
 .textblock {
   width: 70%;
   margin: 40px auto;
 }
+
+.textblock2 {
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.textdevider {
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;
+}
+
 .description {
   padding-bottom: 8px;
 }
+
+.description2 {
+  padding-bottom: 8px;
+  text-align: center;
+}
+
 .description p {
   padding-top: 16px;
 }
+
 h2 {
   padding-bottom: 16px;
   margin: 0;
   font-weight: 600;
 }
+
+h3 {
+  padding-bottom: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+
 ul {
   padding-top: 16px;
 }
+
 li {
   padding-bottom: 8px;
 }
+
 .custom-bullets {
   list-style: none;
   padding-left: 0;
 }
+
 .custom-bullets li::before {
   content: "✦";
   margin-right: 8px;
 }
+
 .rotating-circle {
   width: 300px;
   height: 300px;
@@ -266,11 +346,13 @@ li {
   width: min(max(220px, 20vw), 300px);
   height: min(max(220px, 20vw), 300px);
 }
+
 .rotating-circle svg {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .rotating-circle text {
   font-size: 26px;
   font-family: "Geist", sans-serif;
@@ -281,21 +363,27 @@ li {
   text-align: justify;
   opacity: 20%;
 }
+
 #moreText {
   display: none;
 }
+
 #moreText div {
   padding-bottom: 10px;
 }
+
 #toggleLink {
   cursor: pointer;
 }
+
 #toggleLink:hover {
   text-decoration: underline;
 }
+
 .currently {
   padding-top: 10px;
 }
+
 .marquee-container {
   overflow: hidden;
   width: 100%;
@@ -303,13 +391,16 @@ li {
   margin: 32px 0;
   position: relative;
 }
+
 .marquee-track {
   display: flex;
   width: max-content;
   animation: scroll-left 20s linear infinite;
 }
+
 .marquee-text {
-  padding: 0 2rem; /* Some spacing between repeats */
+  padding: 0 2rem;
+  /* Some spacing between repeats */
   font-size: 1.3em;
   font-weight: 800;
   text-transform: uppercase;
@@ -317,21 +408,26 @@ li {
   color: #191919;
   opacity: 0.2;
 }
+
 .optional {
   padding: 0;
   margin: 0;
 }
+
 .links {
   margin-top: 32px;
   align-content: center;
 }
+
 .links a {
   color: #191919;
   text-decoration: none;
 }
+
 .links a:hover {
   text-decoration: none;
 }
+
 .links div {
   background-color: #f5f5f5;
   padding: 16px;
@@ -340,26 +436,31 @@ li {
   margin-bottom: 8px;
   cursor: pointer;
 }
+
 .links div:hover {
   background-color: #ccc;
 }
+
 .gradient-text {
   background: linear-gradient(90deg, #FF4D4D, #FF00CC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
 }
+
 .footer {
   background-color: #f5f5f5;
   width: 100%;
   height: 400px;
   margin-top: 40px;
 }
+
 .tooltip-box {
   position: relative;
   display: inline-block;
   width: 100%;
 }
+
 .tooltip-follow {
   position: absolute;
   background-color: #0000FF;
@@ -372,80 +473,99 @@ li {
   font-size: 0.9em;
   z-index: 10;
 }
-.underline{
-	font-size: 13px;
-	color: #999;
-	font-weight: 400;
-	padding-top: 32px;
-	text-align: center;
+
+.underline {
+  font-size: 13px;
+  color: #999;
+  font-weight: 400;
+  padding-top: 32px;
+  text-align: center;
 }
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
 }
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 @media (max-width: 1000px) {
   .cases {
     flex-direction: column;
   }
+
   .rotating-circle {
     top: 260px;
     transform: translateX(50%);
   }
+
   .textblock {
     width: 100%;
   }
+
   .subtext2 {
     padding: 32px 0;
     width: 100%;
   }
 }
+
 @media (max-width: 800px) {
   .rotating-circle {
     top: 260px;
     transform: translateX(50%);
   }
+
   .optional {
     display: none !important;
   }
+
   .footer-nav {
     flex-direction: column;
   }
 }
+
 @media (max-width: 660px) {
   .rotating-circle {
     top: 330px;
     transform: translateX(50%);
   }
+
   .mag {
     height: 600px;
   }
+
   .autoru img {
     max-width: 300px;
     width: 100%;
   }
 }
+
 @media (max-width: 500px) {
   .rotating-circle {
     display: none;
   }
+
   body {
     margin: 32px 16px;
   }
+
   .subtext {
     width: 100%;
   }
+
   .autoru img {
     max-width: 250px;
     width: 100%;
