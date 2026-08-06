@@ -193,11 +193,40 @@ img {
 
 .dinn-admin video {
   max-width: 1024px;
-  min-width: 300px;
+  min-width: 0;
+}
+.lantana-app-showcase {
+  background-color: #212d25;
+  text-align: center;
 }
 
-.dinn-tips,
-.lantana-case {
+.lantana-app-showcase video {
+  max-width: 100%;
+  min-width: 0;
+  margin-bottom: -8px;
+}
+.lantana-climate-showcase {
+  background-color: #212d25;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.lantana-climate-showcase video {
+  max-width: 100%;
+  min-width: 0;
+  margin-bottom: -8px;
+}
+.lantana-homepage-preview {
+  background-color: #26352C;
+  text-align: center;
+}
+
+.lantana-homepage-preview video {
+  max-width: 1200px;
+  min-width: 0;
+  margin-bottom: -6px;
+}
+.dinn-tips {
   background-color: #D962FF;
   text-align: center;
 }
@@ -235,8 +264,13 @@ img {
   text-align: center;
 }
 
-.article img {
+.article img,
+.article video {
   width: 100%;
+}
+
+.article video {
+  max-width: 100%;
 }
 
 .mag {
@@ -278,13 +312,13 @@ img {
   margin: 40px auto;
 }
 
-.textblock2 {
+.lantana-credits {
   width: 70%;
   margin: 40px auto;
   text-align: center;
 }
 
-.textdevider {
+.lantana-credits-divider {
   width: 70%;
   margin: 40px auto;
   text-align: center;
@@ -294,7 +328,7 @@ img {
   padding-bottom: 8px;
 }
 
-.description2 {
+.lantana-credits-details {
   padding-bottom: 8px;
   text-align: center;
 }
@@ -358,10 +392,10 @@ li {
   font-family: "Geist", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  fill: #191919;
+  fill: #ffdc73;
   font-weight: 800;
   text-align: justify;
-  opacity: 20%;
+  opacity: 80%;
 }
 
 #moreText {
