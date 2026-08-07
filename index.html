@@ -290,8 +290,11 @@
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
 
-        tooltip.style.left = `${x + 10}px`;
-        tooltip.style.top = `${y + 10}px`;
+        const left = Math.min(x + 10, rect.width - tooltip.offsetWidth);
+        const top = Math.min(y + 10, rect.height - tooltip.offsetHeight);
+
+        tooltip.style.left = `${Math.max(0, left)}px`;
+        tooltip.style.top = `${Math.max(0, top)}px`;
         tooltip.style.opacity = 1;
       });
 
