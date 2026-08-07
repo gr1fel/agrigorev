@@ -24,6 +24,10 @@ body {
   margin: 32px;
 }
 
+::selection {
+  background-color: #FFD6E7;
+}
+
 /* -------------------------
    Layout: Navigation
 -------------------------- */
@@ -218,6 +222,10 @@ img {
 }
 .lantana-homepage-preview {
   background-color: #26352C;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
