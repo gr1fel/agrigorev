@@ -614,13 +614,15 @@ li {
   }
 
   .lantana-homepage-preview {
-    min-height: 400px;
+    min-height: 500px;
   }
 
-  .lantana-homepage-preview > video {
+  .lantana-homepage-preview > video,
+  .lantana-app-showcase > video,
+  .lantana-climate-showcase > video {
     display: block;
     width: 100%;
-    height: 400px;
+    height: 500px;
     max-width: 100%;
     margin-bottom: 0;
     object-fit: cover;
