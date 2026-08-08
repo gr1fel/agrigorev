@@ -377,8 +377,8 @@ li {
   margin: 0 auto;
   animation: spin 20s linear infinite;
   position: absolute;
-  top: 200px;
-  right: 64px;
+  top: 36%;
+  right: 5%;
   z-index: 100;
   pointer-events: none;
   width: min(max(220px, 20vw), 300px);
@@ -572,6 +572,12 @@ li {
 
   .footer-nav {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .rotating-circle {
+    display: none;
   }
 }
 
