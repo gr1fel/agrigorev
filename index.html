@@ -112,6 +112,37 @@
         </text>
       </svg>
     </div>
+    <div class="tooltip-box">
+      <a href="https://qic.online/en/market" target="_blank" rel="noopener"
+        aria-label="Visit QIC Car Market">
+        <div class="qic-market-preview">
+          <div class="qic-market-glow" aria-hidden="true"></div>
+          <div class="qic-market-art qic-market-art-left" aria-hidden="true">
+            <div class="qic-market-float">
+              <div class="qic-market-tilt">
+                <img class="qic-market-box" src="assets/qic-market/hero-box-left.webp" alt="" decoding="async"
+                  fetchpriority="high">
+                <img class="qic-market-sticker qic-market-sticker-en" src="assets/qic-market/sticker-en.svg" alt=""
+                  decoding="async">
+              </div>
+            </div>
+          </div>
+          <div class="qic-market-art qic-market-art-right" aria-hidden="true">
+            <div class="qic-market-float">
+              <div class="qic-market-tilt">
+                <img class="qic-market-box" src="assets/qic-market/hero-box-right.webp" alt="" decoding="async"
+                  fetchpriority="high">
+                <img class="qic-market-sticker qic-market-sticker-ar" src="assets/qic-market/sticker-ar.svg" alt=""
+                  decoding="async">
+              </div>
+            </div>
+          </div>
+          <div class="tooltip-follow">Visit live product</div>
+        </div>
+      </a>
+    </div>
+    <div class="label">QIC Car Market: reimagining Qatar's automotive marketplace <span class="subline">✦ Product
+        design, Design leadership, B2C+B2B</span></div>
     <div class="tooltip-box"> <a href="lantana.html">
     <div class="lantana-homepage-preview">
       <video src="assets/lantana/lantana-ios-app.mp4" autoplay muted loop playsinline
@@ -300,6 +331,48 @@
         tooltip.style.opacity = 0;
       });
     });
+  </script>
+  <script>
+    (() => {
+      const preview = document.querySelector('.qic-market-preview');
+      if (!preview || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      let currentX = 0;
+      let currentY = 0;
+      let targetX = 0;
+      let targetY = 0;
+      let animationFrame = null;
+
+      const render = () => {
+        currentX += (targetX - currentX) * 0.09;
+        currentY += (targetY - currentY) * 0.09;
+        preview.style.setProperty('--qic-pointer-x', currentX.toFixed(3));
+        preview.style.setProperty('--qic-pointer-y', currentY.toFixed(3));
+
+        if (Math.abs(targetX - currentX) > 0.002 || Math.abs(targetY - currentY) > 0.002) {
+          animationFrame = requestAnimationFrame(render);
+        } else {
+          animationFrame = null;
+        }
+      };
+
+      const requestRender = () => {
+        if (animationFrame === null) animationFrame = requestAnimationFrame(render);
+      };
+
+      preview.addEventListener('pointermove', event => {
+        const rect = preview.getBoundingClientRect();
+        targetX = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+        targetY = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+        requestRender();
+      });
+
+      preview.addEventListener('pointerleave', () => {
+        targetX = 0;
+        targetY = 0;
+        requestRender();
+      });
+    })();
   </script>
 </body>
 
