@@ -296,7 +296,7 @@ img {
 }
 
 .qic-market-sticker-layer {
-  z-index: 3;
+  z-index: 1;
 }
 
 .qic-market-float,
