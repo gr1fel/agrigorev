@@ -295,6 +295,10 @@ img {
   z-index: 1;
 }
 
+.qic-market-sticker-layer {
+  z-index: 3;
+}
+
 .qic-market-float,
 .qic-market-tilt {
   position: relative;
@@ -757,11 +761,7 @@ li {
   }
 
   .qic-market-case {
-    margin-top: -16px;
-  }
-
-  .qic-market-label {
-    padding-bottom: 16px;
+    margin-top: -24px;
   }
 
   body {
@@ -796,21 +796,17 @@ li {
   }
 
   .qic-market-art {
-    width: 122%;
+    width: 90%;
   }
 
   .qic-market-art-left {
-    top: 38%;
-    left: 30%;
+    top: 48%;
+    left: 18%;
   }
 
   .qic-market-art-right {
-    top: 61%;
-    left: 72%;
-  }
-
-  .qic-market-sticker-ar {
-    top: 68.58%;
+    top: 72%;
+    left: 85%;
   }
 
   .lantana-homepage-preview > video,
