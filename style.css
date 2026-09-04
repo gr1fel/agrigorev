@@ -236,10 +236,18 @@ img {
   --qic-pointer-y: 0;
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 7.65;
   overflow: hidden;
   isolation: isolate;
   background: linear-gradient(90deg, #d9d9ff, #ededff);
+}
+
+.qic-market-stage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .qic-market-glow {
@@ -266,7 +274,7 @@ img {
 .qic-market-art-left {
   --qic-base-rotation: 15deg;
   --qic-direction: 1;
-  top: 65%;
+  top: 48%;
   left: 18%;
   z-index: 1;
 }
@@ -274,7 +282,7 @@ img {
 .qic-market-art-right {
   --qic-base-rotation: -15deg;
   --qic-direction: -1;
-  top: 46%;
+  top: 58%;
   left: 85%;
   z-index: 2;
 }
@@ -326,8 +334,8 @@ img {
 }
 
 .qic-market-sticker-en {
-  top: 29.735%;
-  left: 35.475%;
+  top: 34.735%;
+  left: 65.475%;
   width: 37.42%;
   rotate: -7.79deg;
 }
@@ -504,10 +512,10 @@ li {
   font-family: "Geist", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  fill: #ffdc73;
+  fill: #FFD6E6;
   font-weight: 800;
   text-align: justify;
-  opacity: 80%;
+  opacity: 1;
 }
 
 #moreText {
@@ -762,6 +770,11 @@ li {
   }
 
   .qic-market-preview {
+    height: 425px;
+    aspect-ratio: auto;
+  }
+
+  .qic-market-stage {
     height: 500px;
     aspect-ratio: auto;
   }
@@ -771,12 +784,12 @@ li {
   }
 
   .qic-market-art-left {
-    top: 69%;
+    top: 38%;
     left: 30%;
   }
 
   .qic-market-art-right {
-    top: 34%;
+    top: 61%;
     left: 72%;
   }
 
