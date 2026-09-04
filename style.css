@@ -242,6 +242,14 @@ img {
   background: linear-gradient(90deg, #d9d9ff, #ededff);
 }
 
+.qic-market-case {
+  margin-top: -8px;
+}
+
+.qic-market-label {
+  padding-bottom: 32px;
+}
+
 .qic-market-stage {
   position: absolute;
   bottom: 0;
@@ -341,8 +349,8 @@ img {
 }
 
 .qic-market-sticker-ar {
-  top: 73.58%;
-  left: 52.285%;
+  top: 68.58%;
+  left: 22.285%;
   width: 28.23%;
   rotate: 9.16deg;
 }
@@ -512,7 +520,7 @@ li {
   font-family: "Geist", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  fill: #FFD6E6;
+  fill: #ffa1c3;
   font-weight: 800;
   text-align: justify;
   opacity: 1;
