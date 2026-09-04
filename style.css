@@ -276,7 +276,7 @@ img {
   --qic-direction: 1;
   top: 48%;
   left: 18%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .qic-market-art-right {
@@ -284,7 +284,7 @@ img {
   --qic-direction: -1;
   top: 58%;
   left: 85%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .qic-market-float,
