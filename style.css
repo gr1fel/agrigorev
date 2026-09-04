@@ -349,7 +349,7 @@ img {
 }
 
 .qic-market-sticker-ar {
-  top: 68.58%;
+  top: 34.58%;
   left: 22.285%;
   width: 28.23%;
   rotate: 9.16deg;
@@ -756,6 +756,14 @@ li {
     display: none;
   }
 
+  .qic-market-case {
+    margin-top: -16px;
+  }
+
+  .qic-market-label {
+    padding-bottom: 16px;
+  }
+
   body {
     margin: 32px 16px;
   }
@@ -799,6 +807,10 @@ li {
   .qic-market-art-right {
     top: 61%;
     left: 72%;
+  }
+
+  .qic-market-sticker-ar {
+    top: 68.58%;
   }
 
   .lantana-homepage-preview > video,
