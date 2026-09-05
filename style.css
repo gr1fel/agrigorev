@@ -532,10 +532,31 @@ li {
 
 #moreText {
   display: none;
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
 }
 
-#moreText div {
-  padding-bottom: 0px;
+#moreText.is-visible {
+  display: grid;
+  row-gap: 8px;
+}
+
+#moreText li {
+  display: grid;
+  grid-template-columns: 1em minmax(0, 1fr);
+  column-gap: 0.25em;
+  align-items: start;
+}
+
+#moreText li::before {
+  content: "✦";
+  grid-column: 1;
+}
+
+#moreText li > span {
+  grid-column: 2;
+  min-width: 0;
 }
 
 #toggleLink {
@@ -544,10 +565,6 @@ li {
 
 #toggleLink:hover {
   text-decoration: underline;
-}
-
-.currently {
-  padding-top: 10px;
 }
 
 .marquee-container {
